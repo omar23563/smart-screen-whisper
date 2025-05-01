@@ -8,11 +8,13 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ greeting = "Bienvenue !" }) => {
   return (
-    <div className="text-center mb-10">
-      <Clock />
-      <h1 className="text-4xl font-bold text-teal-800 mb-2">Accueil</h1>
-      <div className="flex flex-col items-center">
-        <div className="text-3xl font-semibold text-teal-700">{greeting}</div>
+    <div className="mb-12">
+      <div className="flex justify-between items-start mb-6">
+        <div className="text-left">
+          <h1 className="text-5xl font-bold text-teal-800 mb-2">Accueil</h1>
+          <div className="text-3xl font-semibold text-teal-700">{greeting}</div>
+        </div>
+        <Clock />
       </div>
     </div>
   );

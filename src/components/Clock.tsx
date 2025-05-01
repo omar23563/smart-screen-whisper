@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
-import { Clock as ClockIcon } from "lucide-react";
 
 export const Clock: React.FC = () => {
   const [date, setDate] = useState(new Date());
@@ -23,15 +22,20 @@ export const Clock: React.FC = () => {
   const formattedTime = format(date, "HH:mm:ss");
 
   return (
-    <div className="my-4 text-gray-600">
-      <div className="flex flex-col items-center gap-2">
-        <div className="flex items-center gap-2 text-3xl font-bold text-teal-700">
-          <ClockIcon className="h-8 w-8" />
-          <time className="font-digital" dateTime={date.toISOString()}>
-            {formattedTime}
-          </time>
-        </div>
-        <time className="text-xl" dateTime={date.toISOString()}>
+    <div className="text-right">
+      <div className="inline-block px-6 py-3 bg-gradient-to-r from-teal-700/90 to-teal-600/90 rounded-lg shadow-lg">
+        <time 
+          className="text-4xl font-bold tracking-wider text-white" 
+          dateTime={date.toISOString()}
+        >
+          {formattedTime}
+        </time>
+      </div>
+      <div className="mt-2">
+        <time 
+          className="text-xl font-medium text-teal-700 capitalize" 
+          dateTime={date.toISOString()}
+        >
           {formattedDate}
         </time>
       </div>

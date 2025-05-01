@@ -51,7 +51,7 @@ const TaskList: React.FC<TaskListProps> = ({
       <h2 className="text-3xl font-bold text-teal-800 mb-6">{title}</h2>
       <div className="space-y-6">
         {tasks.map((task) => (
-          <Card key={task.id} className="p-6 flex items-center space-x-6 bg-white/70 shadow-sm">
+          <Card key={task.id} className="p-7 flex items-center space-x-6 bg-white/70 shadow-sm hover:bg-white/90 transition-colors">
             <div className="flex-shrink-0 h-10 w-10 rounded-full bg-teal-100 flex items-center justify-center">
               <Check className="h-6 w-6 text-teal-600" />
             </div>
