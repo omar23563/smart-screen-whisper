@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,30 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				teal: {
+					50: '#f2fcf9',
+					100: '#d3f4ea',
+					200: '#a7e7d4',
+					300: '#6bd4b6',
+					400: '#39bf99',
+					500: '#1ea67f',
+					600: '#13866a',
+					700: '#126957',
+					800: '#0f5446',
+					900: '#0e4539',
+				},
+				green: {
+					50: '#F2FCE2', // Light green background from the image
+					100: '#DFFDB9',
+					200: '#C9F98E',
+					300: '#A9EF57',
+					400: '#8EE932',
+					500: '#72D41E',
+					600: '#57AC13',
+					700: '#41850E',
+					800: '#2E650A',
+					900: '#204807',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
